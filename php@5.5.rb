@@ -34,8 +34,6 @@ class PhpAT55 < Formula
   depends_on "unixodbc"
   depends_on "webp"
 
-  needs :cxx11
-
   def install
     # Ensure that libxml2 will be detected correctly in older MacOS
     if MacOS.version == :el_capitan || MacOS.version == :sierra
